@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="222" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (22)=FullPath
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output24">
+          <RecordInfo>
+            <Field name="Invoice Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Invoice ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Invoice Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Invoice Status" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Customer ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Customer Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Place of Supply" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Place of Supply(With State Code)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="GST Treatment" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Is Inclusive Tax" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Due Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="PurchaseOrder" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Currency Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Exchange Rate" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Discount Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Is Discount Before Tax" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Template Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Entity Discount Percent" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TCS Tax Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TCS Percentage" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TDS Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TDS Percentage" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TDS Section Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TDS Section" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TDS Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="SubTotal" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Total" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Balance" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Adjustment" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Adjustment Description" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Expected Payment Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Last Payment Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Payment Terms" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Payment Terms Label" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Notes" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Terms &amp; Conditions" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Status" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Reference Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="TCS Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Entity Discount Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Branch ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Branch Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge Tax Exemption Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Charge SAC Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Desc" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Quantity" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Discount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Discount Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Total" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Usage unit" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Price" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Product ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="UPC" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="MPN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="EAN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="ISBN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Sales Order Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Expense Reference ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Recurrence Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="PayPal" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Authorize.Net" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Google Checkout" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Payflow Pro" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Stripe" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Paytm" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="2Checkout" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Braintree" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Forte" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="WorldPay" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Payments Pro" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Square" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="WePay" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Razorpay" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="GoCardless" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Partial Payments" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Attention" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Address" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Street2" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing City" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing State" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Country" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Phone" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Billing Fax" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Attention" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Address" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Street2" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping City" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping State" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Country" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Fax" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Phone Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice QRJson" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice QR Raw Data" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Ack Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Ack Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Cancel Remark" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Cancel Reason" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="e-Invoice Failure Reason" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier Org Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier GST Registration Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier Street Address" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier City" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier State" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier Country" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier ZipCode" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier Phone" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supplier E-Mail" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CGST Rate %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="SGST Rate %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="IGST Rate %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CESS Rate %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CGST(FCY)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="SGST(FCY)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="IGST(FCY)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CESS(FCY)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CGST" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="SGST" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="IGST" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="CESS" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reverse Charge Tax Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reverse Charge Tax Rate" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reverse Charge Tax Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="GST Identification Number (GSTIN)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Nature Of Collection" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="SKU" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Project ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Project Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="HSN/SAC" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Round Off" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Sales person" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Subject" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Primary Contact EmailID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Primary Contact Mobile" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Primary Contact Phone" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Estimate Number" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="POD ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Division" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Custom Charges" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Bill#" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Bill Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Shipping Bill Total" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="PortCode" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reference Invoice#" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reference Invoice Date" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reference Invoice Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="GST Registration Number(Reference Invoice)" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Reason for issuing Debit Note" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="E-Commerce Operator Name" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="E-Commerce Operator GSTIN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Account" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Account Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Invoice Shipment Status" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Manually Shipped Quantity" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Supply Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Tax ID" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Tax" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Tax %" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Tax Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Tax Type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="Item Tax Exemption Reason" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\01 Input\Zoho\AAJCG5616Q_Bills00.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="..\..\..\..\Projects_Development\Automation GSTR1_to_Bolton_Swiggy Team\02 Alteryx Workflows\_externals\1\Import Multiple Schema CSV files.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="30" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>\\INMUM2236\Common_TX_Users$\Data_Ajmal\Alteryx_Utilities</Directory>
+          <FileSpec>*.*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir \\INMUM2236\Common_TX_Users$\Data_Ajmal\Alteryx_Utilities\*.*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">.\Output.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output24" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Fullpath Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CSV File_Combining</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="67715db3-f88f-494f-a1ea-e57223263c12" />
+      <Telemetry>
+        <PreviousWorkflowId value="dbbb32db-1c29-49f9-8932-1101c5d2bcc3" />
+        <OriginWorkflowId value="dbbb32db-1c29-49f9-8932-1101c5d2bcc3" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

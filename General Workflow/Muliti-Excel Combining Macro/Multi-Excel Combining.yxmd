@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="1266" height="287" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 26</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+            <Position x="79" y="120" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Directory>\\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\22-23\DRR\RK fresh\May-Mar</Directory>
+              <FileSpec>*.xlsx</FileSpec>
+              <IncludeSubDirs value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dir \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\22-23\DRR\RK fresh\May-Mar\*.xlsx</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings>
+            <Position x="234" y="213" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy" />
+              <Value name="ControlParams"><![CDATA[Control Parameter (6)=FullPath
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Dynamic Multi File Sheet Names (3)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output7">
+              <RecordInfo>
+                <Field name="Sheet Names" size="10000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\22-23\DRR\RK fresh\May-Mar\aug-22\pspseller5_fresh_blr5\2022Aug1-2022Aug1CustomUnifiedTransaction-blr5.xlsx|||&lt;List of Sheet Names&gt; (BatchMacro)" type="V_WString" />
+                <Field name="FileName" size="10000" source="Formula: [FileName]+&quot;.xlsx&quot; (BatchMacro)" type="WString" />
+                <Field name="Full Filename" size="1073741823" source="Formula: [FileName]+&quot;|||&quot;+[Sheet Names] (BatchMacro)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro=".\_Macro\Dynamic Multi File Sheet Names.yxmc" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="343" y="130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="FileName" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="FileName" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_FileName" selected="False" rename="Right_FileName" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="776" y="132" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[FullPath]+&quot;|||&quot;+[Sheet Names]" field="FullPath" size="32767" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[FullPath = [FullPath]+"|||"+[Sheet Names]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="427" y="123" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FullPath" />
+                <Field field="Directory" />
+                <Field field="FileName" />
+                <Field field="ShortFileName" />
+                <Field field="CreationTime" />
+                <Field field="LastAccessTime" />
+                <Field field="LastWriteTime" />
+                <Field field="Size" />
+                <Field field="AttributeArchive" />
+                <Field field="AttributeCompressed" />
+                <Field field="AttributeEncrypted" />
+                <Field field="AttributeHidden" />
+                <Field field="AttributeNormal" />
+                <Field field="AttributeOffline" />
+                <Field field="AttributeReadonly" />
+                <Field field="AttributeReparsePoint" />
+                <Field field="AttributeSparseFile" />
+                <Field field="AttributeSystem" />
+                <Field field="AttributeTemporary" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1206" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">\\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\22-23\DRR\RK fresh\RK Fresh_May-Mar.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>RK Fresh_May-Mar.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1074" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="210" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="621" y="103" width="152" height="204" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 27</Caption>
+              <Style TextColor="#314c4a" FillColor="#ffff80" BorderColor="#314c4a" Transparency="50" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="13">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="631" y="137" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Expression>1//!Contains([Sheet Names], 'Sheet1') &amp;&amp; !Contains([FileName],"conso")</Expression>
+                  <Mode>Custom</Mode>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>1//!Contains([Sheet Names], 'Sheet1') &amp;&amp; !Contains([FileName],"conso")</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="28">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="631" y="257" width="100" height="40" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Add filters here if required</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="416" y="220" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Esnure-Choose 'All' here</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings>
+            <Position x="932" y="143" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy" />
+              <Value name="ControlParams"><![CDATA[Control Parameter (22)=FullPath
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Import Multiple Schema Flat Files (6)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output24">
+              <RecordInfo>
+                <Field name="Includes Amazon Marketplace, Fulfillment by Amazon (FBA), and Amazon Webstore transactions" size="3160" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F2" size="2644" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F3" size="2595" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F4" size="2113" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F5" size="1098" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F6" size="2164" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F7" size="774" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F8" size="538" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F9" size="641" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F10" size="255" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F11" size="255" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F12" size="255" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="F13" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F14" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F15" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F16" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F17" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F18" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F19" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F20" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F21" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F22" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F23" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F24" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="F25" size="255" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="FileName" size="255" source="File: (Multiple Sources)" type="V_WString" />
+                <Field name="FullPath" size="32767" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Sheet Names" size="32767" source="Summarize: (Multiple Sources)" type="V_WString" />
+                <Field name="Sheet Names2" size="10000" source="Summarize: GroupBy - Sheet Names" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro=".\_Macro\Import Multiple Schema Flat Files.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Input3" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output7" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="33" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="33" Connection="Fullpath Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Unique" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output24" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Multi-Excel Combining</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="06c98ba4-5e19-4cd3-855a-0cfce7640c84" />
+      <Telemetry>
+        <PreviousWorkflowId value="9655aa78-c201-404b-a912-32bfa43f7262" />
+        <OriginWorkflowId value="9655aa78-c201-404b-a912-32bfa43f7262" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

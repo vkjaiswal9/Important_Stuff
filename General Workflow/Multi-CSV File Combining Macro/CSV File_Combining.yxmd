@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="342" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (22)=FullPath
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Import Multiple Schema CSV files (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output24">
+          <RecordInfo>
+            <Field name="SEQ" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Seller_Gstin" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Invoice_Number" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Invoice_Date" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Transaction_Type" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Order_Id" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Shipment_Id" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Shipment_Date" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Order_Date" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Quantity" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Item_Description" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Asin" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Hsn_sac" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Product_Tax_Code" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Ship_To_State" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Ship_To_Postal_Code" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Invoice_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Tax_Exclusive_Gross" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Total_Tax_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Cgst_Rate" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Sgst_Rate" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Utgst_Rate" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Igst_Rate" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Compensatory_Cess_Tax" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Shipping_Cess_Tax_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Gift_Wrap_Compensatory_Cess_Tax" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Tcs_Cgst_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Tcs_Sgst_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Tcs_Utgst_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Tcs_Igst_Amount" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Credit_Note_No" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Credit_Note_Date" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="TAX_RATE" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="TAX_CHARGED" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="GST_CESS" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="GST_EXCL_CESS" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="CUM_INV_AMT" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Actual_Valid_HSN" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="MODIFIED_HSN" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Rev_Qty" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="EcomGSTIN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\RKF B2C CSV_July23\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="POS" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="TYPE_OF_SUPPLY" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="IGST" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="CGST" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="SGST" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="TAX_NATURE_MISMATCH" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="FILING_HSN" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="B2CL_OR_NO" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\RKF B2C CSV_July23\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+            <Field name="SEQ,Seller_Gstin,Invoice_Number,Invoice_Date,Transaction_Type,Order_Id,Shipment_Id,Shipment_Date,Order_Date,Quantity,Item_Description,Asin,Warehouse_Id,Hsn_sac,Product_Tax_Code,Ship_To_State,Ship_To_Postal_Code,Invoice_Amount,Tax_Exclusive_Gross,Total_Tax" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Warehouse_Id" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Customer_Bill_To_Gstid" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Buyer_Name" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="BuyerPAN" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Type" size="1000" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Gstin_Of_Receiver" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Transaction_Id" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Ship_From_State" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Invoice_Value" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Hsn_Code" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Taxable_Value" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Igst_Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Sgst_Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Utgst_Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Cgst_Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Compensatory_Cess_Amount" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Gstin_Of_Supplier" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="supply_type" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="SGST_UTGST" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+            <Field name="Buyer_PAN" size="1000" source="File: \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\ST\ST July 23Raw Data\RKF_ST\RKF_ST\CSV\06AAECR0564M1Z7-0.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro=".\_Macro\Import Multiple Schema CSV files.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>\\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23</Directory>
+          <FileSpec>*.csv</FileSpec>
+          <IncludeSubDirs value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir \\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\July-23(New)\July-23\*.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="666" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">\\INMUM2236\Common_TX_Users$\Projects_Live\MTR vs DRR Reconciliation\RKW\01 Input\23-24\MTR\Output\Jul-23-24_csv.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Jul-23-24_csv.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="174" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Provide folder path</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output24" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Fullpath Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CSV File_Combining</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="67715db3-f88f-494f-a1ea-e57223263c12" />
+      <Telemetry>
+        <PreviousWorkflowId value="dbbb32db-1c29-49f9-8932-1101c5d2bcc3" />
+        <OriginWorkflowId value="dbbb32db-1c29-49f9-8932-1101c5d2bcc3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
